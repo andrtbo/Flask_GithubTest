@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Delete Book{% endblock %}
+
+{% block content %}
+    <h2>Delete Book</h2>
+    {% if deleted %}
+        <p>Book deleted successfully!</p>
+    {% else %}
+        <p>Please add the id of the book you'd like to delete.</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Update Book{% endblock %}
+
+{% block content %}
+    <h2>Update Book</h2>
+    {% if upd_book %}
+        <p>Book updated successfully!</p>
+    {% else %}
+        <p>Please add the id of the book you'd like to update as well as the new title, new author, new price, and new year published to the URL.</p>
+    {% endif %}
+{% endblock %}
